@@ -1,2 +1,10 @@
 ## Python Sol
 
+class Solution:
+    def missingNumber(self, nums: list[int]) -> int:
+        counter = 0
+        while counter in nums:
+            counter = counter + 1
+        return counter 
+                 
+        
