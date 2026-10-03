@@ -1,0 +1,15 @@
+## Python Sol
+
+class Solution:
+    def minTimeToVisitAllPoints(self, points: list[list[int]]) -> int:
+        t = 0
+        for curr, nxt in zip(points, points[1:]):
+            x1 = curr[0]
+            y1 = curr[1]
+            x2 = nxt[0]
+            y2 = nxt[1]
+            cmpx = abs(x1 - x2)
+            cmpy = abs(y1 - y2)
+            t = t + max(cmpx, cmpy)
+        return t
+        
