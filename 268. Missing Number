@@ -7,4 +7,4 @@ class Solution:
             counter = counter + 1
         return counter 
                  
-        
+## C++ Sol        
